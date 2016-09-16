@@ -1,8 +1,9 @@
 # GPIO
 
-GPIO packag with support for [Atmel GPIO Controller][atmel]. This controller
+GPIO package with support for [Atmel GPIO Controller][atmel]. This controller
 is used by many SoC's such as the Atmel AT91SAM9x series. The package is only a
-small wrapper around [orangetux/gpio][gpio].
+small wrapper around the `gpio.Pin` type of the package [orangetux/gpio][gpio].
+Check it's documentation to learn how to use this type.
 
 ## Usage
 
