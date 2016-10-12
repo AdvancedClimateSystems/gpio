@@ -2,9 +2,10 @@ package atmel
 
 import (
 	"fmt"
-	"github.com/orangetux/gpio"
 	"os"
 	"path/filepath"
+
+	"github.com/orangetux/gpio"
 )
 
 const (
@@ -45,15 +46,15 @@ func expose(pin int) (string, error) {
 	var err error
 
 	switch pin / 32 {
-	case 1:
+	case 0:
 		pinController = "A"
-	case 2:
+	case 1:
 		pinController = "B"
-	case 3:
+	case 2:
 		pinController = "C"
-	case 4:
+	case 3:
 		pinController = "D"
-	case 5:
+	case 4:
 		pinController = "E"
 	default:
 		err = fmt.Errorf("GPIO %d does not exist", pin)
